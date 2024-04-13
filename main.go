@@ -14,9 +14,6 @@ func main() {
 
 	port := "8080"
 
-	// staticFileServer := http.FileServer(http.Dir("./static"))
-	// http.Handle("/static/", http.StripPrefix("/static/", staticFileServer))
-
 	http.HandleFunc("/", helloHandler)
 
 	fmt.Printf("Starting server on port %s...\n", port)
